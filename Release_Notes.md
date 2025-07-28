@@ -149,3 +149,8 @@ Plots like scatterplot or histogram also have many more additional customization
 * Bugfixes (thanks @vroger11, @Sigmun, @ToniSkulj)
 * Drop support for Python3.8
 * Add support for Python3.10 and Python3.11
+  
+# 0.6.1
+
+* Add support for Bokeh 3.7
+* Add support for Python3.12 and Python3.13
