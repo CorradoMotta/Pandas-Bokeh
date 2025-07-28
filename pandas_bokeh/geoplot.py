@@ -5,7 +5,6 @@ import numpy as np
 import pandas as pd
 from bokeh.colors import RGB
 from bokeh.models import NumeralTickFormatter, TickFormatter
-from bokeh.tile_providers import get_provider
 
 from .base import embedded_html
 
@@ -26,13 +25,13 @@ TILE_PROVIDERS = [
 
 
 def _get_background_tile(provider_name):
-    """Returns a Bokeh WTMS Tile Provider Source from <provider_name>. If
-    <provider_name is not valid, it returns False."""
+    """Simply check if provider_name is valid, 
+    it returns False otherwise."""
 
     if provider_name not in TILE_PROVIDERS:
         return False
 
-    return get_provider(provider_name)
+    return provider_name
 
 
 def _add_backgroundtile(

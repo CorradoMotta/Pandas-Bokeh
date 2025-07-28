@@ -11,7 +11,7 @@ from bokeh.models import (
     ColorBar,
     ColumnDataSource,
     DatetimeTickFormatter,
-    FuncTickFormatter,
+    CustomJSTickFormatter,
     HoverTool,
     LinearColorMapper,
     RangeTool,
